@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  background: black;
+  overflow-x: hidden;
+  color: #fff;
+  padding-left: 4rem;
+  padding-right: 5rem;
+}
+
+h1 {
+  font-size: 6rem;
+  margin-top: 15rem;
+}
+
+.text {
+  margin-top: 3rem;
+  font-size: 2rem;
+  /* font-style: italic; */
+  width: 50%;
+}
+
+.timer {
+  margin-top: 6rem;
+}
+
+.time {
+  font-size: 6rem;
+}
+
+.day {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+
+
+@media only screen and (max-width: 49.5em) {
+  .text {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 40.625em) {
+
+  .text {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 4rem;
+    margin-top: 8rem;
+  }
+
+  .time {
+    font-size: 4rem;
+  }
+}
+
+footer p {
+  text-align: right;
+  font-size: 1.3rem;
+  margin-top: 4rem;
+
+}
+
+footer p a {
+  text-decoration: none;
+  color: #00acee;
+  font-size: 2rem;
+
+}
+
+@media only screen and (max-width: 27.1875em) {
+  body {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  footer p {
+    margin-top: 10rem;
+    text-align: center;
+    border-top: 1px solid grey;
+  }
+}
+
+@media only screen and (max-width: 24em) {
+  h1 {
+    font-size: 3.2rem;
+  }
+}
