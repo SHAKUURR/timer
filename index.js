@@ -2,8 +2,7 @@
 const time = document.querySelector(".time");
 const day = document.querySelector(".day");
 const text = document.querySelector(".text");
-
-setInterval(() => {
+const tick = () => {
 	const now = new Date();
 	const options = {
 		hour: "numeric",
@@ -14,7 +13,9 @@ setInterval(() => {
 	console.log(new Intl.DateTimeFormat(locale, options).format(now));
 
 	time.textContent = new Intl.DateTimeFormat(locale, options).format(now);
-}, 1000);
+};
+tick();
+const timer = setInterval(tick, 1000);
 
 // console.log(new Date());
 
